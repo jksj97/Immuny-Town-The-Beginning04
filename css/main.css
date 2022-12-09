@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {font-size: 16px;}
+
+body {
+    font-size: 1rem;
+    font-family: 'Lexend', sans-serif;
+    position: relative;
+}
+
+.body{width: 100%; text-align: center; overflow: hidden;}
+.pink{background-color: #E3C6FE;}
+
+/* .container{border: 1px solid red;} */
+.inner{width: 325px; margin: 0 auto;}
+
+li{list-style: none;}
+
+.bg01, .bg02{background: url("../images/bg01.png"); background-size: cover;}
+
+.set01, .set02, .set03, .set04, .set05{position: relative; padding: 10rem 0 0 0;} 
+
+.set01 .set01-content01, 
+.set02 .set02-content01, 
+.set03 .set03-content01, 
+.set04 .set04-content01, 
+.set05 .set05-content01,
+.set06 .set06-content01{position: relative; z-index: 11;}
+
+
+.set02 .set02-bgContainer,
+.set03 .set03-bgContainer,
+.set04 .set04-bgContainer,
+.set05 .set05-bgContainer,
+.set06 .set06-bgContainer{position: absolute; top: 0;}
+
+.set01 a {display: inline-block; margin-top: 3rem;}
+.set01 a p {display: inline-block;}
+
+.set02 .set02-bgContainer img:nth-child(1) {float: right; position: relative; top: 2rem; left: 4rem;}
+.set02 .set02-bgContainer img:nth-child(2) {float: left; position: relative; top: 4rem; right: 4rem;}
+.set02 .set02-bgContainer img:nth-child(3) {float: right; position: relative; top: 20rem; left: 6.5rem;}
+
+.set03 .set03-content01{right: 26px; padding-bottom: 4rem;}
+.set03 .set03-bgContainer img:nth-child(1) {float: left; position: relative; top: 0rem; right: 4rem;}
+.set03 .set03-bgContainer img:nth-child(2) {float: right; position: relative; top: 12rem; right: 1rem;}
+
+.set03 .set03-bgContainer img:nth-child(1) {float: left; position: relative; top: 0rem; right: 4rem;}
+
+.set04 .set04-bgContainer img:nth-child(1) {float: left; position: relative; top: 12rem; left: -12rem;}
+.set04 .set04-bgContainer img:nth-child(2) {float: right; position: relative; top: 60rem; right: 0rem;}
+
+.set05{border-bottom: 1px solid #E3C6FE; text-align: center; margin: 0 auto;}
+.set05 .NKCL {margin-top: 8rem; position: relative; z-index: 2;}
+.set05 .set05-bgContainer img:nth-child(1) {float: left; position: relative; top: 3rem; left: -6rem;}
+.set05 .set05-bgContainer img:nth-child(2) {float: right; position: relative; top: 21rem; right: -9rem;}
+.set05 .set05-bgContainer img:nth-child(3) {float: left; position: relative; top: 22rem; left: -6.5rem;}
+.set05 .set05-bgContainer img:nth-child(4) {float: right; position: relative; top: 48rem; right: -6rem; z-index: 0;}
+.set05 .set05-btn{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center; 
+    margin: 2.5rem 0 3rem 0;
+}
+.set05 .set05-btn a{display: inline-block;}
+
+.set05 .set05-content01{padding-bottom: 2rem;}
+.accordion{position: relative; z-index: 10; width: 100%; padding: 0 1rem;}
+.accordion ul li {margin-bottom: 1rem; background-color: #B3BFEE; border-radius: 1rem; box-shadow: 0 2px 8px rgba(128, 11, 67, 18%); }
+input[id*= "answer"]{display: none;}
+input[id*="answer"] + label{
+    position: relative;
+    z-index: 10;
+    display: block; 
+    padding: 1.5rem 1rem; 
+    border: 1.5px solid #D7DFFF; 
+    border-radius: 1rem; 
+    background-color: #D7DFFF; 
+    box-shadow: 0 2px 8px rgba(128, 11, 67, 18%); 
+    font-weight: 900;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+input[id*= "answer"] + label + div{
+    max-height: 0; 
+    transition: all .35s; 
+    overflow: hidden;  
+    font-size: 14px;
+    font-weight: 600;
+}
+input[id*= "answer"] + label + div p{
+    display: inline-block;
+    padding: 1rem 10px;
+}
+input[id*= "answer"]:checked + label + div{max-height: 100px;}
+
+
+.set05-btn{display: flex; align-items: center;}
+.set05-btn button{border: none; margin-bottom: 1rem; width: 120px; height: 46px; border-radius: 0.8rem; background-color: rgba(215, 223, 255, 30%); box-shadow: 0 2px 8px rgba(128, 11, 67, 18%);}
+.set05-btn button:nth-child(3){margin-bottom: 0;}
+.set05-btn button a{text-align: center; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;}
+.set05-btn button a .btn01{margin-top: 15px;}
+.set05-btn button a .btn02, 
+.set05-btn button a .btn03{margin-top: 6px;}
+
+.set06{padding: 3rem 0 2rem 1rem; text-align: left;}
+.set06 .snsLink-btn{position: relative; right: 10px; display: flex; align-items: center; justify-content: space-between;}
+.set06 .snsLink-btn .btn-container button {width: 120px; height: 46px; margin-bottom: 1rem; background-color: #EEE9FD; box-shadow: 0 2px 8px rgba(128, 11, 67, 18%); border: none; border-radius: 0.8rem; color: black;}
+.set06 .snsLink-btn .btn-container button a{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+    text-decoration: none; 
+    font-weight: 600; 
+    color: black; 
+    font-size: 14px;
+    border-radius: 0.8rem;
+}
+.snsLink-character{position: relative; left: 2rem;}
+
+/* footer */
+.footer-container{padding: 5% 0%; text-align: left;}
+.name-NKCL{font-size: 14px; font-weight: 800 !important; padding: 2% 1%;}
+.footer-container .bot-cont{font-size: 12px; padding: 2% 1%; padding-top: 0;}
+.footer-container .bot-cont p{padding: 2px 0; letter-spacing: -0.5px;}
+
+.oner-cont{display: flex; padding-bottom: 2px;}
+.oner-cont span:nth-child(1){padding-right: 6px;}
+.oner-cont span:nth-child(2){position: relative; border-left: 2px solid black; padding-left: 6px;}
